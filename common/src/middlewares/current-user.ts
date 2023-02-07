@@ -6,6 +6,7 @@ interface UserPayload {
   email: string;
 }
 
+//Reaching a type definition (inside the Express Library  on this example) and change it: 
 declare global {
   namespace Express {
     interface Request {
@@ -29,7 +30,7 @@ export const currentUser = (
       process.env.JWT_KEY!
     ) as UserPayload;
     req.currentUser = payload;
-  } catch (err) {}
+  } catch (err) { }
 
   next();
 };
