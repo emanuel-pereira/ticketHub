@@ -7,7 +7,7 @@ metadata:
     nginx.ingress.kubernetes.io/use-regex: 'true'
 spec:
   rules:
-    - host: http://127.0.0.1:5500
+    - host: emanuel-pereira.github.io/ticketHub/
       http:
         paths:
           - path: /api/payments/?(.*)
