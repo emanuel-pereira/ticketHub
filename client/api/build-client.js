@@ -5,7 +5,7 @@ const buildClient = ({ req }) => {
     // We are on the server
 
     return axios.create({
-      baseURL: 'emanuel-pereira.github.io',
+      baseURL: 'https://emanuel-pereira.github.io/ticketHub',
       headers: req.headers,
     });
   } else {
